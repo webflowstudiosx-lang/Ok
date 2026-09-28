@@ -1,7 +1,7 @@
 # Banner Style Guide (v1)
 
 Read this before designing any banner or section in Framer.
-Built from 5 reference screenshots. Update it every time the owner gives feedback.
+Built from 8 reference screenshots (Foreal, Creatiqe, Skillclass, Mike Bennet, Kora, Trova, Himon, Agero). Update it every time the owner gives feedback.
 
 ## The format
 - Every banner is a **website hero shown as a product shot**: a hero section sitting inside
@@ -32,6 +32,35 @@ Built from 5 reference screenshots. Update it every time the owner gives feedbac
 - Three bands: nav → headline block → bottom row (short blurb left, stats or CTA right).
 - Lots of empty space. One focal point, maybe one secondary (floating card or stat).
 - Thin hairline dividers (1px, ~15% opacity) instead of boxes.
+
+## Moves worth stealing (from refs 6–8)
+- **Split bottom row** (Trova): headline bottom-left, short blurb bottom-right, small
+  tag chips with icons under it (Mountain / Coastal / Forest).
+- **Mono micro-label** (Himon): uppercase monospace label top-left ("SMART LOGISTICS
+  SOLUTIONS"), faint vertical hairline dividing the layout into columns.
+- **Pill CTA with coloured circle arrow** (Himon): white pill, label left, accent circle
+  with → on the right.
+- **Images inside the headline** (Agero): small rounded pill-shaped photos placed
+  between words. Two-tone headline: some words muted grey, key words black, one accent word.
+- **Status tab** (Agero): "● Available for new projects" tab hanging from the top edge.
+- **Avatar stack + "Trusted by founders."** as quiet social proof above the headline.
+
+## Section patterns (for building sections, not just banners)
+- Hero: see above. Always one headline, one sub-line, one or two CTAs.
+- Social proof: avatar stack + one line, or a greyed logo strip along the bottom.
+- Floating card: small white rounded card (image + 2 lines + arrow) layered over the hero.
+- Tags/chips: small pills with icon + word, semi-transparent on photos.
+- Stats: big number + tiny uppercase label, 2–3 max.
+
+## Motion (subtle, clean)
+- Code file in Framer: `BannerMotion.tsx` (overrides). Nothing flashy.
+- Site card: `withSiteRise` (fades in, scales 0.97 → 1).
+- Stagger content top to bottom with `withReveal1`…`withReveal5`
+  (fade up 24px + blur 6px → 0, 1s, soft ease-out, 0.15s apart).
+- Hairlines: `withLineDraw`. Background photos: `withSlowZoom` (6s, barely visible).
+- Buttons/cards: `withHoverLift`.
+- Rule: everything finishes within ~2s. No bouncing, no spinning, no looping.
+- To post motion on X: open Preview, screen-record, trim to 5–8s.
 
 ## Colour
 - Base neutrals: near-black #0E0E0E / #111111, bone #EEEBE3, muted grey #6B6860.
