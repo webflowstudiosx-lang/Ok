@@ -244,6 +244,16 @@ by the refs yet. Ask the owner for section screenshots before doing those "high-
   can't upload images pasted into chat. Best flow: owner sends direct image links, or
   drops photos into Framer and Claude uses those frames.
 - Updating a shared text style changes every node using it — check before editing.
+- `bottom` / `right` pins are IGNORED on create (node lands at top/left 0). Always compute
+  `top`/`left`. To right-align, wrap in a full-width transparent stack with
+  `stackDistribution="end"`; to centre, a full-width stack with `"center"`.
+- `name="..."` attribute sets the layer name (use it: "Image Placeholder — …", "Overlay").
+- Gradient overlays: `backgroundColor="linear-gradient(...)"` is accepted by the plugin
+  (render not yet confirmed by owner).
+- Image placeholders = plain frames with a neutral fill, named "Image Placeholder — …";
+  owner drops the photo in as the fill.
+- Concepts go on their own design page ("Concepts 01", "Concepts 02"…), banners side by
+  side at left 0 / 1700 / 3400, 1600 × 900 each.
 
 ---
 
