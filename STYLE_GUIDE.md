@@ -1,7 +1,12 @@
 # Banner Style Guide (v1)
 
 Read this before designing any banner or section in Framer.
-Built from 11 reference screenshots (Foreal, Creatiqe, Skillclass, Mike Bennet, Kora, Trova, Himon, Agero, Sendoq ×3). Update it every time the owner gives feedback.
+Built from 16 reference screenshots (Foreal, Creatiqe, Skillclass, Mike Bennet, Kora, Trova, Himon, Agero, Sendoq ×3, Aureva, Cheerzy, Healytics, HavenHues, Galileo).
+
+**How to use this guide:** the references are a vocabulary, NOT templates. Never copy one.
+For each banner, pull 2–4 principles/moves from different refs and combine them into
+something new that still has the same high-end Framer rhythm. Every output should look
+different from the last, and from every reference. Update it every time the owner gives feedback.
 
 ## The format
 - Every banner is a **website hero shown as a product shot**: a hero section sitting inside
@@ -69,6 +74,35 @@ Built from 11 reference screenshots (Foreal, Creatiqe, Skillclass, Mike Bennet, 
 - **Giant stat numbers:** huge thin numbers (40+, 94%) right-aligned, one in orange,
   with a small label or quote on the left, separated by hairlines.
 - **Logo strip** directly under the hero, big and evenly spaced, no heading.
+
+## Refs 12–16 (Instagram-style showcase posts)
+- **Post wrapper = the consistent brand layer.** The site mockup changes every post, but the
+  frame around it stays the same: author avatar + name, "Crafted by / Powered by" line,
+  a "Save for Later" or "Swipe →" pill, soft grey or blurred-photo background. This is how
+  an account stays recognisable while the designs inside vary.
+- **Format:** these are 4:5 portrait (1080 × 1350), mockup card centred with ~120px margin.
+- **Big label above the mockup** (HavenHues): "Real Estate / Website" in huge type, second
+  word faded/translucent, overlapping the top of the device. Bottom: "UI/UX Design · Real
+  Estate Industry" + Swipe pill.
+- **Bento hero** (Aureva, Galileo): headline top-left, then a grid of rounded tiles:
+  one big photo, small dark stat tile (140+), white stat tile (16k), photo tile with a
+  floating pill button. Tiles "notch" into each other (inverse rounded corners).
+- **Glass stat chip over a photo** (Aureva): frosted rounded card with "8K+ PROJECTS" +
+  2-line description, plus a white review pill (avatar + stars) under it.
+- **Serif italic word inside a sans headline, on its own line** (Cheerzy: "People *Thrive*",
+  "Build A *Great Culture*"). Same trick as Foreal. This is a recurring signature, use it.
+- **Tilted marquee ribbons** (Cheerzy): orange strips with ✱ separators crossing the photo.
+- **Blueprint lines** (Cheerzy, Healytics): faint dashed guide lines + small corner dots
+  framing the hero, like the design grid is showing. Very "designer" detail.
+- **Headline wrapping around a subject** (Healytics): huge thin words split left/right of a
+  central image, text partly behind the subject. Underline swoosh in the accent colour.
+- **Stat row with accent on the symbol only** (Healytics): "15**+**", "92**%**", "24/**7**"
+  where only the + / % / 7 is in the accent colour. Stats in soft rounded tiles.
+- **Stat + line + label** (HavenHues): `10K+ ——— EXCLUSIVE LISTINGS` on one line.
+- **CTA with square accent icon** (HavenHues): dark/white button with a lime square ↗ at the end.
+- **Highlighted phrase in paragraph** (Galileo): second half of a statement sentence in the
+  accent colour (same idea as Sendoq's fade to grey).
+- **Tiny tag above section headings**: "Features", "WHY CHOOSE US", "● How AI Works" pill.
 
 ## Section patterns (for building sections, not just banners)
 - Hero: see above. Always one headline, one sub-line, one or two CTAs.
