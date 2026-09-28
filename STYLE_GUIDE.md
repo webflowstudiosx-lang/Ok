@@ -1,7 +1,7 @@
 # Banner Style Guide (v1)
 
 Read this before designing any banner or section in Framer.
-Built from 8 reference screenshots (Foreal, Creatiqe, Skillclass, Mike Bennet, Kora, Trova, Himon, Agero). Update it every time the owner gives feedback.
+Built from 11 reference screenshots (Foreal, Creatiqe, Skillclass, Mike Bennet, Kora, Trova, Himon, Agero, Sendoq ×3). Update it every time the owner gives feedback.
 
 ## The format
 - Every banner is a **website hero shown as a product shot**: a hero section sitting inside
@@ -46,6 +46,29 @@ Built from 8 reference screenshots (Foreal, Creatiqe, Skillclass, Mike Bennet, K
   between words. Two-tone headline: some words muted grey, key words black, one accent word.
 - **Status tab** (Agero): "● Available for new projects" tab hanging from the top edge.
 - **Avatar stack + "Trusted by founders."** as quiet social proof above the headline.
+
+## Sendoq (refs 9–11): full-page system worth copying
+- **Palette:** warm beige page (#EDE4D3-ish), near-black panels (#171717), one orange
+  accent (#FF5A1F). Black and beige alternate section by section, so the page has rhythm.
+- **Type pairing:** light editorial serif for headlines (thin, elegant, e.g. Instrument Serif
+  regular or similar), clean grotesk for everything else. Headlines are NOT bold here, and
+  the contrast of size carries them instead of weight.
+- **Page as stacked cards:** each section is its own rounded panel (~24px radius) inset
+  from the page edge, not full-bleed. The nav sits outside the first card on the beige.
+- **Product UI as the visual:** instead of photos, fake dashboard cards (charts, gauges,
+  stat numbers, bar columns) in cream cards, fanned/overlapping, joined to the CTA by thin
+  connector lines. Great for SaaS/tech banners when there's no photo.
+- **Photo + UI overlay:** a warm photo with a white UI card (bar chart) layered over the
+  bottom of it. A textured photo background (grass/nature) with a glassy UI card on top.
+- **Timeline rail:** thin vertical line with dots + labels running down the right edge.
+- **Segmented tab pill:** dark pill with an orange active tab (Outreach / Automation / …).
+- **Split heading row:** serif H2 on the left, small grey paragraph on the right, same line.
+- **Numbered steps on dark:** 3 columns, orange circle icon, title, grey 2-line description.
+- **Fading paragraph:** a big statement paragraph where the first half is black and the
+  rest fades to grey. Very clean emphasis without bold or colour.
+- **Giant stat numbers:** huge thin numbers (40+, 94%) right-aligned, one in orange,
+  with a small label or quote on the left, separated by hairlines.
+- **Logo strip** directly under the hero, big and evenly spaced, no heading.
 
 ## Section patterns (for building sections, not just banners)
 - Hero: see above. Always one headline, one sub-line, one or two CTAs.
