@@ -238,8 +238,11 @@ by the refs yet. Ask the owner for section screenshots before doing those "high-
   Existing styles live under `/Banner/…`; make a new folder per banner (e.g. `/B02/…`) so
   banners don't change each other.
 - Borders/hairlines via XML didn't apply once; prefer a 1px-tall frame with a fill colour.
-- Images: `backgroundImage` URL on a frame (Claude can't generate photos; use Unsplash URLs
-  or photos the owner provides).
+- Images: `backgroundImage="<url>"` on a frame WORKS — Framer (on the owner's machine)
+  downloads it into the project (tested with an images.unsplash.com URL). But Claude's
+  cloud computer can't reach unsplash/pexels, so Claude can't search or see photos, and
+  can't upload images pasted into chat. Best flow: owner sends direct image links, or
+  drops photos into Framer and Claude uses those frames.
 - Updating a shared text style changes every node using it — check before editing.
 
 ---
