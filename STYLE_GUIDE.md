@@ -8,7 +8,9 @@ Built from 8 reference screenshots (Foreal, Creatiqe, Skillclass, Mike Bennet, K
   a frame/device on a backdrop. The backdrop is either near-black (#0E0E0E) or a
   blurred, zoomed-in crop of the hero's own photo.
 - Canvas: **1600 × 900** (16:9, native for X). Inner "site" ~1480 × 780, radius ~20px.
-- Built on the Framer design page **"Banners"**. One frame per banner: `Banner01`, `Banner02`…
+- Work happens on the **Home page** (Desktop breakpoint, 1200px wide). Page bg #0E0E0E,
+  12px padding, cream card inside with 22px radius. Headline 136px (serif word 150px) at this width.
+- Old test copy also lives on the design page "Banners" (1600 × 900).
 
 ## Two moods (pick one per banner)
 1. **Type-led** (refs: Creatiqe, Mike Bennet). No photo needed. One flat colour field
@@ -53,7 +55,10 @@ Built from 8 reference screenshots (Foreal, Creatiqe, Skillclass, Mike Bennet, K
 - Stats: big number + tiny uppercase label, 2–3 max.
 
 ## Motion (subtle, clean)
-- Code file in Framer: `BannerMotion.tsx` (overrides). Nothing flashy.
+- Claude CANNOT set Framer's native Appear effects through the plugin. The owner applies
+  them by hand using the values below. (Fallback: code overrides in `BannerMotion.tsx`.)
+- Native Appear values: Opacity 0, Offset Y 24, Blur 6 → Ease Out, 1s, stagger delays
+  0 / 0.15 / 0.3 / 0.45 / 0.6 top to bottom. Card: Opacity 0, Scale 0.97, 1.2s.
 - Site card: `withSiteRise` (fades in, scales 0.97 → 1).
 - Stagger content top to bottom with `withReveal1`…`withReveal5`
   (fade up 24px + blur 6px → 0, 1s, soft ease-out, 0.15s apart).
