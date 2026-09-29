@@ -252,6 +252,16 @@ by the refs yet. Ask the owner for section screenshots before doing those "high-
   (render not yet confirmed by owner).
 - Image placeholders = plain frames with a neutral fill, named "Image Placeholder — …";
   owner drops the photo in as the fill.
+- DO NOT send big SVGs through the plugin. A 7KB traced-logo SVG made the plugin disconnect
+  and crash Framer twice; small SVGs were silently ignored ("No changes were made"). Build
+  line art from 1px frames with rotation instead, and leave logo slots for the owner to
+  drop real SVG files into.
+- Keep each update small (one section at a time) and re-read the node after a crash —
+  half-finished nodes can be left behind.
+- Web pages accept extra root frames next to the Desktop breakpoint (used for Variant B/C).
+- `position="fixed"` + `height="100vh"` works for sticky sidebars on a breakpoint.
+- `duplicateNode` returns no id; read the parent XML to find the copy, then move it with
+  updateXmlForNode.
 - Concepts go on their own design page ("Concepts 01", "Concepts 02"…), banners side by
   side at left 0 / 1700 / 3400, 1600 × 900 each.
 
