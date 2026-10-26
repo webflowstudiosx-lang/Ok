@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="logo" href="/">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l7 8-7 8M20 4l-7 8 7 8"/></svg>
+        Relay
+      </a>
+      <div id="user-area"></div>
+    </header>
+
+    <!-- Sign in / sign up -->
+    <main id="auth-view" class="auth" hidden>
+      <div class="card">
+        <h1 id="auth-title">Sign in</h1>
+        <p class="muted" id="auth-sub">Welcome back. Pick up where your agents left off.</p>
+        <form id="auth-form">
+          <label>Email<input type="email" id="email" required autocomplete="email" /></label>
+          <label>Password<input type="password" id="password" required minlength="6" autocomplete="current-password" /></label>
+          <button class="btn primary" type="submit" id="auth-submit">Sign in</button>
+        </form>
+        <p class="msg" id="auth-msg"></p>
+        <p class="switch"><span id="switch-text">No account yet?</span> <a href="#" id="switch-link">Create one</a></p>
+      </div>
+    </main>
+
+    <!-- Dashboard -->
+    <main id="app-view" class="app" hidden>
+      <section class="intro">
+        <p class="eyebrow">Workspace</p>
+        <h1>Send in the work.</h1>
+        <p class="muted">Relay queues it, runs it on an isolated worker, and marks it done.</p>
+      </section>
+      <form id="task-form" class="task-form">
+        <input id="task-title" placeholder="e.g. Summarise this week's support tickets" maxlength="200" required />
+        <button class="btn primary" type="submit">Send to Relay →</button>
+      </form>
+      <p class="msg" id="task-msg"></p>
+      <section>
+        <div class="list-head mono"><span>JOB</span><span>STATUS</span></div>
+        <ul id="task-list"></ul>
+        <p class="muted empty" id="empty" hidden>No jobs yet. Send one in above.</p>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
